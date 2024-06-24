@@ -14,20 +14,19 @@
 
 body{
     max-width: 480px ;
-    background-color: aqua;
     margin: auto;
     font-family: Inter-Regular;
 }
 .main-container{
     padding: 15px;
     border: white solid 2px;
-
-
 }
+
 .one-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     padding: 20px 0;
 
 }
@@ -202,16 +201,33 @@ button:hover{
 .one-third-container{
     max-width: 100%;
     display: flex;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .one-third-container h4, h5, p {
     width: 100%;
 }
+.content h4 {
+    font-family: Inter-Bold;
+
+    font-size: 3rem;
+    margin: 0;
+    color: salmon;
+}
+
+.content h5{
+    font-family: Inter-Bold;
+    font-size: 1.45rem;
+    margin: 15px 0;
+}
+
+.content p {
+    margin: 0;
+}
 
 .one-third-container img{
     width: 30%;
-    margin-right: 20px;
+    margin-right: 35px;
 }
 
 .full-image img{

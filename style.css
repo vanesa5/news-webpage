@@ -1,0 +1,164 @@
+body{
+    max-width: 480px ;
+    background-color: aqua;
+    margin: auto;
+}
+.main-container{
+    padding: 15px;
+    border: white solid 2px;
+
+
+}
+.one-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+
+figure{
+    margin: 0;
+}
+
+/* Start of Ham menu for mobil*/
+
+
+.off-screen-menu{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    max-width: 360px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+
+.off-screen-menu ul {
+list-style:none;
+}
+
+.off-screen-menu.active{
+    right: 0;
+}
+
+nav{
+    padding: 1rem;
+    display: flex;
+    background-color: white;
+}
+
+.ham-menu{
+    height: 50px;
+    width: 50px;
+    margin-right: auto;
+    position: relative;
+}
+
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+
+.ham-menu span:nth-child(1){
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3){
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1){
+    top:50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.ham-menu.active span:nth-child(2){
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3){
+    top:50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+
+/* End of Ham menu for mobil*/
+
+
+
+
+.second-container{
+    width: 100%;
+    padding-bottom: 20px;
+
+}
+
+.third-container{
+    background-color: black;
+    color: aliceblue;
+    padding: 30px 20px;
+}
+
+.third-container h3 {
+    color: orange;
+    margin: 0;
+
+}
+.third-container h4 {
+    margin: 0;
+}
+
+.third-container h4 {
+    margin: 16px 0;
+}
+
+.content-one, .content-two, .content-three{
+    padding: 30px 0;
+}
+
+
+.content-one, .content-two{
+    border-bottom: white solid 1px;
+
+}
+
+
+.fourth-container{
+    padding: 45px 0 ;
+}
+.one-third-container{
+    max-width: 100%;
+    display: flex;
+    padding: 15px 0;
+}
+
+.one-third-container h4, h5, p {
+    width: 100%;
+}
+
+.one-third-container img{
+    width: 30%;
+    margin-right: 20px;
+}
+
+.full-image img{
+    width: 100%;
+}
+
+
+

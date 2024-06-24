@@ -1,7 +1,22 @@
+@font-face {
+    font-family: 'Inter-Bold' ;
+    src: url('assets/fonts/static/Inter-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Inter-ExtraBold' ;
+    src: url('assets/fonts/static/Inter-ExtraBold.ttf');
+  }
+  @font-face {
+    font-family: 'Inter-Regular' ;
+    src: url('assets/fonts/static/Inter-Regular.ttf');
+  }
+
 body{
     max-width: 480px ;
     background-color: aqua;
     margin: auto;
+    font-family: Inter-Regular;
 }
 .main-container{
     padding: 15px;
@@ -21,7 +36,7 @@ figure{
     margin: 0;
 }
 
-/* Start of Ham menu for mobil*/
+/* Start of Ham menu for mobile*/
 
 
 .off-screen-menu{
@@ -101,12 +116,41 @@ nav{
 
 
 
+/*Header starts*/
 
 .second-container{
     width: 100%;
     padding-bottom: 20px;
+}
+
+h2{
+    margin: 20px 0;
+    font-size: 3.75rem;
+    font-family: Inter-Bold;
+}
+
+.second-container p {
+    color: rgb(73, 73, 73);
+    font-weight: thin;
+    font-size: 1.25rem;
+    line-height: 2rem;
 
 }
+
+button{
+    width: 50%;
+    height: 50px;
+    margin: 20px 0;
+    font-family: inter-bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+
+
+/*Header ends*/
+
 
 .third-container{
     background-color: black;

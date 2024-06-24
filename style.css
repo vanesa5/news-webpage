@@ -129,7 +129,7 @@ h2{
     font-family: Inter-Bold;
 }
 
-.second-container p {
+ p {
     color: rgb(73, 73, 73);
     font-weight: thin;
     font-size: 1.25rem;
@@ -138,6 +138,8 @@ h2{
 }
 
 button{
+    background-color: salmon;
+    border: none;
     width: 50%;
     height: 50px;
     margin: 20px 0;
@@ -145,6 +147,11 @@ button{
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 4px;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
 }
 
 
@@ -159,26 +166,33 @@ button{
 }
 
 .third-container h3 {
+    font-size: 3rem;
+    font-family: Inter-Bold;
     color: orange;
     margin: 0;
+    
 
-}
-.third-container h4 {
-    margin: 0;
 }
 
 .third-container h4 {
+    font-size: 1.6rem;
+    font-family: Inter-Bold;
     margin: 16px 0;
 }
 
-.content-one, .content-two, .content-three{
-    padding: 30px 0;
+.third-container p {
+    color: rgb(164, 164, 164);
+    font-size: 1.25rem;
 }
-
 
 .content-one, .content-two{
     border-bottom: white solid 1px;
+    padding: 30px 0;
 
+}
+
+.content-three {
+    padding-top: 30px;
 }
 
 

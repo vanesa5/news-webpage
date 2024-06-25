@@ -17,18 +17,16 @@ body{
     min-width: 370px;
     margin: auto;
     font-family: Inter-Regular;
-}
-.main-container{
     padding: 15px;
-    background-color: white;
 
 }
+
 
 .one-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
     padding: 20px 0;
 
 }
@@ -239,4 +237,92 @@ button:hover{
 
 
 
+@media only screen and (min-width: 600px) {
+    body{
+        max-width: 1200px ;
+    }
 
+    .one-container{
+        max-width: 100%;
+    }
+
+    .off-screen-menu{
+        display: contents;
+    }
+    .off-screen-menu ul{
+        font-size: 1rem;
+        display: flex;
+        justify-items: left;
+        
+    }
+    .off-screen-menu ul li{
+        padding-left: 40px; 
+        font: .75;      
+    }
+
+    .off-screen-menu ul li:hover{
+        color: salmon;
+    }
+
+    .ham-menu, nav{
+        display: none;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .second-container{
+        max-width: 65%;
+    }
+
+ 
+    .full-image img{
+        max-height: 300px;
+        image-resolution: 100%;
+        object-fit: cover;
+    }
+    .second-container h2 {
+        font-size: 3rem;
+    }
+
+    .second-container h2 {
+        width: 45%;
+    }
+
+    .description{
+        width: 50%;
+    }
+
+    .section-content{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .second-container button{
+
+        height: 50px;
+        width: 180px;
+    }
+
+
+    .third-container{
+        max-width: 350px;
+        margin-left: 36px;
+    }
+
+    .third-container h4:hover{
+        color: orange;
+    }
+
+    .fourth-container{
+        display: flex;
+    }
+
+    .fourth-container h5:hover{
+        color: salmon;
+    }
+
+
+  }

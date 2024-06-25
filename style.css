@@ -45,7 +45,7 @@ figure{
     max-width: 70%;
     position: fixed;
     top: 0;
-    right: -450px;
+    right: -550px;
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
@@ -236,16 +236,12 @@ button:hover{
     width: 100%;
 }
 
-
-
-@media only screen and (min-width: 600px) {
+/*Tablet CSS Below this line*/
+@media only screen and (min-width: 768px) {
     body{
-        max-width: 1200px ;
+        min-width: 768px;
     }
 
-    .one-container{
-        max-width: 100%;
-    }
 
     .off-screen-menu{
         display: contents;
@@ -268,30 +264,104 @@ button:hover{
     .ham-menu, nav{
         display: none;
     }
+
     .main-container{
         display: flex;
         flex-direction: row;
     }
-
+   
     .second-container{
         max-width: 65%;
     }
-
- 
-    .full-image img{
-        max-height: 300px;
-        image-resolution: 100%;
-        object-fit: cover;
-    }
     .second-container h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     p{
         font-size: 1rem;
     }
+
+
+    .second-container button{
+        height: 50px;
+        width: 180px;
+    }
+
+
+    .third-container{
+        max-width: 250px;
+        margin-left: 36px;
+        height: fit-content;
+    }
+
+    .third-container h4:hover{
+        color: orange;
+    }
+
+    .fourth-container{
+        display: flex;
+    }
+
+    .content{
+        margin-right: 10px;
+    }
+
+    .content h4{
+        font-size: 1.25rem;
+    }
+
+    .content h5{
+        font-size: .85rem;
+    }
+
+    .content p{
+        font-size: .75rem;
+        line-height: 1rem;
+    }
+
+    .fourth-container{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0;
+    }
+
+    .fourth-container h5:hover{
+        color: salmon;
+    }
+
+    .one-third-container{
+        width: 250px;
+    }
+
+    #third-card{
+        margin-right: 0;
+    }
+
+}
+
+
+/* Desktop CSS Below this line*/
+@media only screen and (min-width:1200px) {
+    body{
+        max-width: 1200px ;
+    }
+
+
+    .full-image img{
+        max-height: 300px;
+        image-resolution: 100%;
+        object-fit: cover;
+    }
+
+
+
     .second-container h2 {
         width: 45%;
+        font-size: 3rem;
+    }
+    .second-container button{
+        height: 50px;
+        width: 180px;
     }
 
     .description{
@@ -304,30 +374,14 @@ button:hover{
         margin-top: 20px;
     }
 
-    .second-container button{
-
-        height: 50px;
-        width: 180px;
-    }
-
-
     .third-container{
         max-width: 350px;
         margin-left: 36px;
     }
 
-    .third-container h4:hover{
-        color: orange;
-    }
-
-    .fourth-container{
-        display: flex;
-    }
-
     .content{
         margin-right: 30px;
     }
-
     .content h4{
         font-size: 1.75rem;
     }
@@ -336,9 +390,7 @@ button:hover{
         font-size: .95rem;
     }
 
-    .fourth-container h5:hover{
-        color: salmon;
+    .one-third-container{
+        width: 100%;
     }
-
-
   }

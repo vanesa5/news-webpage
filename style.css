@@ -1,18 +1,32 @@
+@font-face {
+    font-family: 'Inter-Bold' ;
+    src: url('assets/fonts/static/Inter-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Inter-ExtraBold' ;
+    src: url('assets/fonts/static/Inter-ExtraBold.ttf');
+  }
+  @font-face {
+    font-family: 'Inter-Regular' ;
+    src: url('assets/fonts/static/Inter-Regular.ttf');
+  }
+
 body{
     max-width: 480px ;
-    background-color: aqua;
+    min-width: 370px;
     margin: auto;
-}
-.main-container{
+    font-family: Inter-Regular;
     padding: 15px;
-    border: white solid 2px;
-
 
 }
+
+
 .one-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 0;
 
 }
@@ -21,23 +35,23 @@ figure{
     margin: 0;
 }
 
-/* Start of Ham menu for mobil*/
+/* Start of Ham menu for mobile*/
 
 
 .off-screen-menu{
     background-color: white;
     height: 100vh;
     width: 100%;
-    max-width: 360px;
+    max-width: 70%;
     position: fixed;
     top: 0;
-    right: -450px;
+    right: -550px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 3rem;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    color: rgb(74, 73, 73);
+    padding-top: 15vh;
     transition: .3s ease;
 }
 
@@ -101,12 +115,48 @@ nav{
 
 
 
+/*Header starts*/
 
 .second-container{
     width: 100%;
     padding-bottom: 20px;
-
 }
+
+h2{
+    width: 80%;
+    margin: 20px 0;
+    font-size: 2.25rem;
+    font-family: Inter-Bold;
+}
+
+ p {
+    color: rgb(73, 73, 73);
+    font-weight: thin;
+    font-size: .95rem;
+    line-height: 1.50rem;
+}
+
+button{
+    background-color: rgb(255, 87, 68);
+    border: none;
+    width: 50%;
+    height: 50px;
+    margin: 10px 0 35px 0;
+    font-family: inter-bold;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+button:hover{
+    color: white;
+    background-color: black;
+}
+
+
+
+/*Header ends*/
+
 
 .third-container{
     background-color: black;
@@ -115,26 +165,34 @@ nav{
 }
 
 .third-container h3 {
+    font-size: 1.75rem;
+    font-family: Inter-Bold;
     color: orange;
     margin: 0;
+    
 
-}
-.third-container h4 {
-    margin: 0;
 }
 
 .third-container h4 {
-    margin: 16px 0;
+    font-size: 1.25rem;
+    font-family: Inter-Bold;
+    margin: 10px 0;
 }
 
-.content-one, .content-two, .content-three{
-    padding: 30px 0;
+.third-container p {
+    color: rgb(164, 164, 164);
+    font-size: .9rem;
+    line-height: 1.5rem;
 }
-
 
 .content-one, .content-two{
     border-bottom: white solid 1px;
+    padding: 15px 0;
 
+}
+
+.content-three {
+    padding-top: 30px;
 }
 
 
@@ -143,16 +201,34 @@ nav{
 }
 .one-third-container{
     max-width: 100%;
+    height: 130px;
     display: flex;
-    padding: 15px 0;
+    padding: 20px 0;
 }
 
 .one-third-container h4, h5, p {
     width: 100%;
 }
 
+.content h4 {
+    font-family: Inter-Bold;
+
+    font-size: 2rem;
+    margin: 0;
+    color: salmon;
+}
+
+.content h5{
+    font-family: Inter-Bold;
+    font-size: 1rem;
+    margin: 15px 0;
+}
+
+.content p {
+    margin: 0;
+}
+
 .one-third-container img{
-    width: 30%;
     margin-right: 20px;
 }
 
@@ -160,5 +236,161 @@ nav{
     width: 100%;
 }
 
+/*Tablet CSS Below this line*/
+@media only screen and (min-width: 768px) {
+    body{
+        min-width: 768px;
+    }
 
 
+    .off-screen-menu{
+        display: contents;
+    }
+    .off-screen-menu ul{
+        font-size: 1rem;
+        display: flex;
+        justify-items: left;
+        
+    }
+    .off-screen-menu ul li{
+        padding-left: 40px; 
+        font: .75;      
+    }
+
+    .off-screen-menu ul li:hover{
+        color: salmon;
+    }
+
+    .ham-menu, nav{
+        display: none;
+    }
+
+    .main-container{
+        display: flex;
+        flex-direction: row;
+    }
+   
+    .second-container{
+        max-width: 65%;
+    }
+    .second-container h2 {
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+
+
+    .second-container button{
+        height: 50px;
+        width: 180px;
+    }
+
+
+    .third-container{
+        max-width: 250px;
+        margin-left: 36px;
+        height: fit-content;
+    }
+
+    .third-container h4:hover{
+        color: orange;
+    }
+
+    .fourth-container{
+        display: flex;
+    }
+
+    .content{
+        margin-right: 10px;
+    }
+
+    .content h4{
+        font-size: 1.25rem;
+    }
+
+    .content h5{
+        font-size: .85rem;
+    }
+
+    .content p{
+        font-size: .75rem;
+        line-height: 1rem;
+    }
+
+    .fourth-container{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0;
+    }
+
+    .fourth-container h5:hover{
+        color: salmon;
+    }
+
+    .one-third-container{
+        width: 250px;
+    }
+
+    #third-card{
+        margin-right: 0;
+    }
+
+}
+
+
+/* Desktop CSS Below this line*/
+@media only screen and (min-width:1200px) {
+    body{
+        max-width: 1200px ;
+    }
+
+
+    .full-image img{
+        max-height: 300px;
+        image-resolution: 100%;
+        object-fit: cover;
+    }
+
+
+
+    .second-container h2 {
+        width: 45%;
+        font-size: 3rem;
+    }
+    .second-container button{
+        height: 50px;
+        width: 180px;
+    }
+
+    .description{
+        width: 50%;
+    }
+
+    .section-content{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    .third-container{
+        max-width: 350px;
+        margin-left: 36px;
+    }
+
+    .content{
+        margin-right: 30px;
+    }
+    .content h4{
+        font-size: 1.75rem;
+    }
+
+    .content h5{
+        font-size: .95rem;
+    }
+
+    .one-third-container{
+        width: 100%;
+    }
+  }

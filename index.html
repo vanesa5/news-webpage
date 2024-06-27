@@ -4,19 +4,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
 
-  <title>Frontend Mentor | News homepage</title>
+  <title>News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+
   </style>
 </head>
 <body>
-<div class="main-container">
 <!--Header starts here-->
 <header>
   <div class="one-container">
@@ -28,6 +28,7 @@
           <ul>
             <li>Home</li>
             <li>New</li>
+            <li>Popular</li>
             <li>Trending</li>
             <li>Catagories</li>
           </ul>
@@ -44,18 +45,21 @@
   </div>
  </header>
  <!--Header ends here-->
+ <div class="main-container">
 <div class="second-container">
 
   <div class="full-image">
     <img src="assets/images/image-web-3-mobile.jpg">
   </div>
+  <div class="section-content">
   <h2>The Bright Future of Web 3.0?</h2>
-
+<div class="description">
   <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
     But is it really fulfilling its promise?</p>
 
   <button>Read more</button> 
-
+</div>
+</div>
 </div>
 
 <!--New container starts -->
@@ -68,7 +72,7 @@
     
     <h4>Hydrogen VS Electric Cars</h4>
 
-    <p>hydrogen-fueled cars ever catch up to EVs?</p>
+    <p>Willhydrogen-fueled cars ever catch up to EVs?</p>
   
   </div>
 
@@ -89,13 +93,15 @@
   </div>
 
 </div>
+</div>
+
 
 <!--New contaner ends -->
 <div class="fourth-container">
 
   <div class="one-third-container">
     <img src="assets/images/image-retro-pcs.jpg">
-    <div class="contaner">
+    <div class="content">
       <h4>01</h4>
       <h5>Reviving Retro PCs</h5>
       <p>What happens when old PCs are given modern upgrades?</p>
@@ -115,23 +121,22 @@
 
   <div class="one-third-container">
     <img src="assets/images/image-gaming-growth.jpg ">
-    <div class="content">
+    <div class="content" id="third-card">
       <h4>03</h4>
       <h5>The Growth of Gaming</h5>
       <p>How the pandemic has sparked fresh opportunities.</p>
     </div>
 
   </div>
+</div> <!--End of main-container-->
 
-</div>
+
 
   
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Vanesa</a>.
+    Coded by <a href="#">Vanesa Garcia</a>.
   </div>
 
-</div> <!--End of main-container-->
 <script src="./script.js"></script>
 
 </body>
